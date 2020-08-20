@@ -5,6 +5,8 @@
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
     "airbnb"
   ],
   "globals": {
@@ -23,11 +25,13 @@
   "plugins": [
     "react",
     "react-hooks",
+    "prettier",
     "@typescript-eslint"
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": "error",
     "react/jsx-filename-extension": [
       1,
       {
